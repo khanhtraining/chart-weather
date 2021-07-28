@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/static/css/main.3b9a186f.chunk.css",
+    "main.js": "/static/js/main.022fef3f.chunk.js",
+    "main.js.map": "/static/js/main.022fef3f.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.83794645.js",
+    "runtime-main.js.map": "/static/js/runtime-main.83794645.js.map",
+    "static/js/2.8d6a42f9.chunk.js": "/static/js/2.8d6a42f9.chunk.js",
+    "static/js/2.8d6a42f9.chunk.js.map": "/static/js/2.8d6a42f9.chunk.js.map",
+    "static/js/3.8175a1fb.chunk.js": "/static/js/3.8175a1fb.chunk.js",
+    "static/js/3.8175a1fb.chunk.js.map": "/static/js/3.8175a1fb.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/main.3b9a186f.chunk.css.map": "/static/css/main.3b9a186f.chunk.css.map",
+    "static/js/2.8d6a42f9.chunk.js.LICENSE.txt": "/static/js/2.8d6a42f9.chunk.js.LICENSE.txt",
+    "static/media/header.scss": "/static/media/bell_notification.88b9eea5.svg",
+    "static/media/status.scss": "/static/media/temperature.c4b59af4.svg",
+    "static/media/params.scss": "/static/media/plus.19250efd.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.83794645.js",
+    "static/js/2.8d6a42f9.chunk.js",
+    "static/css/main.3b9a186f.chunk.css",
+    "static/js/main.022fef3f.chunk.js"
+  ]
+}
