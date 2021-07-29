@@ -1,17 +1,11 @@
 import React, { useState } from 'react'
 import { defaultLocation } from '../../../../__mock__/mockData'
-import LocationSearchBar from '../../../../components/LocationSearchBar'
 import './header.scss'
 import Status from '../Status/Status'
 
 export const Header = () => {
-    const [locationId, setLocationId] = useState(defaultLocation.woeid)
-    const onSearch = (foundLocationId) => {
-        if (foundLocationId !== '') {
-            setLocationId(foundLocationId)
-        }
-    }
-    console.log(locationId);
+    const [locationId, setLocationId] = useState(defaultLocation.id)
+
     return (
         <div>
             <div className="nav-container">
@@ -24,7 +18,6 @@ export const Header = () => {
                     <div className="nav-location-name">myENV</div>
                     <div className="nav-location-dropdown">
                         <section>
-                            <LocationSearchBar onSearch={onSearch} />
                         </section>
                     </div>
                 </div>

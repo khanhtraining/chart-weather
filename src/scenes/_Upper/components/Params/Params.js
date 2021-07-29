@@ -7,13 +7,13 @@ export const Params = (props) => {
             {
                 <div className="weatherParams-wrapper">
                     <div className="weatherParams-wrapper-item">
-                            <div className="title">VISIBILITY</div>
-                            <div className="content bg-number">{Math.round(props.dataFromStatus.visibility)}</div>
+                            <div className="title">PSI</div>
+                            <div className="content bg-number">{(Math.round((props?.dataFromStatus?.main?.pressure)/100))}</div>
                             <div className="extra">Good</div>
                         </div>
                         <div className="weatherParams-wrapper-item">
                             <div className="title">WIND SPEED</div>
-                            <div className="content normal-number">{Math.round(props.dataFromStatus.wind_speed)}</div>
+                            <div className="content normal-number">{(Math.round((props?.dataFromStatus?.wind?.speed)*10))}</div>
                             <div className="extra">km/h</div>
                         </div>
                     <div className="weatherParams-wrapper-item">

@@ -3,6 +3,7 @@ import Chart from './scenes/Chart/Chart'
 import Upper from './scenes/_Upper/Upper'
 import './styles/App.scss'
 
+
 const App = () => {
   return (
     <div className="layout__container">
