@@ -13,16 +13,15 @@ const App = () => {
   useEffect(() => {
     const selectCity = async () => {
       try {
-        const response = await getWeatherData(selectedCity);
+        const response = await getWeatherData(selectedCity)
         setWeather(response.data)
         setTodayHighLight(response.data.weather[0])
       } catch (error) {
-        console.error('Error selected city:', error);
+        console.error('Error selected city:', error)
       }
     }
     selectCity()
   },[])
-  console.log(weather);
   return (
     <div className='layout__container'>
       <TodayDetail selectedCity={selectedCity} weather={weather} todayHighLight={todayHighLight}/>
