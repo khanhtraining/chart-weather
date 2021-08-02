@@ -1,42 +1,41 @@
-.weatherStatus-wrapper {
+.todayDetailHighlight-wrapper {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 40%;
-    padding: 3%;
-    .weatherStatus-wrapper__icon {
+    padding: 1%;
+    .todayDetailHighlight-wrapper__icon {
         width: 80px;
         height: 80px;
         background-size: contain;
-        background-image: url("../../../../assets/cloud.svg");
         cursor: pointer;
     }
 
-    .weatherStatus-wrapper__info {
+    .todayDetailHighlight-wrapper__info {
         margin-left: 30px;
         font-size: 20px;
 
-        .status-text {
+        .highlight-text {
             font-size: 30px;
             color: #ffffff;
         }
-        .status-info {
-            .status-temperature:before {
+        .highlight-info {
+            .highlight-temperature:before {
                 display: inline-block;
                 width: 20px;
                 height: 20px;
                 background-size: contain;
-                background-image: url("../../../../assets/temperature.svg");
+                background-image: url("../../../assets/temperature.svg");
                 content: "";
                 color: #ffffff;
             }
-            .status-humidity::before {
+            .highlight-humidity::before {
                 margin-left: 40px;
                 display: inline-block;
                 width: 20px;
                 height: 20px;
                 background-size: contain;
-                background-image: url("../../../../assets/humidity.svg");
+                background-image: url("../../../assets/humidity.svg");
                 content: "";
                 color: #ffffff;
             }

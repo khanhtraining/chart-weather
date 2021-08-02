@@ -1,15 +1,9 @@
-body {
-    font-family: "Roboto", sans-serif;
-    font-weight: 300;
-    color: #fff;
-    overflow: hidden;
-}
 
 .layout__container {
     width: 100vw;
     height: 100vh;
     overflow: none;
-    &-upper {
+    &-todaydetail {
         height: 60%;
         width: 100%;
         background: linear-gradient(
