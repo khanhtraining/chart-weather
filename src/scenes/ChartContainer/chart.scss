@@ -1,5 +1,8 @@
 .svgchart {
     background-color: #ffffff;
-	// width: 5200px;
-    height: 90%;
+    height: 100%;
+}
+.rect-infor ,.rect-infor_tidemax{
+    transform: translate(-35px,-50px);
+    fill: rgb(178, 179, 177);
 }
