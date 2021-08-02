@@ -2,7 +2,29 @@
     background-color: #ffffff;
     height: 100%;
 }
-.rect-infor ,.rect-infor_tidemax{
-    transform: translate(-35px,-50px);
+.rect-infor {
+    transform: translate(-40px, -50px);
     fill: rgb(178, 179, 177);
+    width: 78px;
+    height: 50px;
+}
+.rect-line {
+    fill: gray;
+    opacity: 0.3;
+}
+.text-infor_hour {
+    fill: black;
+    font-size: 11px;
+    transform: translate(-33px, -30px);
+}
+.text-infor_tide {
+    fill: black;
+    font-size: 14px;
+    transform: translate(-15px, -13px);
+    &--m {
+        transform: translate(5px, -13px);
+    }
+}
+.text-infor_replace {
+    transform: translate(-1000px, -1000px);
 }
