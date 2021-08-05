@@ -1,5 +1,5 @@
 import React from 'react'
-import '../todaydetailcards.scss'
+import './todaydetailcards.scss'
 
 export const TodayDetailCardAdd = () => {
     return (

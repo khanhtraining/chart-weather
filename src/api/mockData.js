@@ -1,17 +1,5 @@
 export const initialState = {
     city: ['Ho Chi Minh', 'Ha Noi', 'Singapore'],
-    weather: {
-        weather: [
-            {
-                main: "Clouds",
-                icon: "03n"
-            }
-        ],
-        main: {
-            temp: 28,
-            humidity: 83
-        }
-    },
     chartWeather: [
         {
             tide: 0.8,
@@ -75,7 +63,7 @@ export const initialState = {
         },
         {
             tide: 0.8,
-            hour: 'Thur 12:00 m',
+            hour: 'Thur 12:00 pm',
             sun: 0
         },
     ]

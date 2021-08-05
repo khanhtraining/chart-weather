@@ -1,8 +1,8 @@
 import React from 'react'
-import LocationSelect from './LocationSelect/LocationSelect'
-import TodayDetailHighlight from './TodayDetailHighlight/TodayDetailHighlight'
-import '../TodayDetail/todaydetail.scss'
-import TodayDetailCards from './TodayDetailCards/TodayDetailCards'
+import LocationSelect from './LocationSelect'
+import TodayDetailHighlight from './TodayDetailHighlight'
+import './todaydetail.scss'
+import TodayDetailCards from './TodayDetailCards'
 export const TodayDetail = (props)=> {
     return (
         <div className='layout__container-todaydetail'>

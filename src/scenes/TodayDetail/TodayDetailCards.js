@@ -1,8 +1,8 @@
 import React from 'react'
-import TodayDetailCardAdd from './components/TodayDetailCardAdd'
-import TodayDetailCardDegue from './components/TodayDetailCardDegue'
-import TodayDetailCardPSI from './components/TodayDetailCardPSI'
-import TodayDetailCardWind from './components/TodayDetailCardWind'
+import TodayDetailCardAdd from './TodayDetailCardAdd'
+import TodayDetailCardDegue from './TodayDetailCardDegue'
+import TodayDetailCardPSI from './TodayDetailCardPSI'
+import TodayDetailCardWind from './TodayDetailCardWind'
 import './todaydetailcards.scss'
 
 export const TodayDetailCards = (props) => {
