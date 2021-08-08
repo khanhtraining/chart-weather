@@ -1,10 +1,10 @@
-import React from '@babel/template'
-import TodayDetail from './scenes/TodayDetail/TodayDetail'
-import '../src/App.scss'
 import { useEffect, useState } from 'react'
+import React from '@babel/template'
 import { getWeatherData } from './utils'
 import { initialState } from './api/mockData'
+import TodayDetail from './scenes/TodayDetail/TodayDetail'
 import ChartContainer from './scenes/ChartContainer/ChartContainer'
+import '../src/App.scss'
 
 const App = () => {
   const [selectedCity, setSelectedCity] = useState(initialState.city[2])
