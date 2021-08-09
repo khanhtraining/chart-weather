@@ -1,4 +1,4 @@
-import React, { useLayoutEffect, useRef } from 'react'
+import React, { useEffect, useRef } from 'react'
 import { select } from 'd3'
 import * as d3 from 'd3'
 
@@ -12,38 +12,23 @@ const SunsetChart = (props) => {
         .domain([0, 3])
         .range([height, 0])
 
-    useLayoutEffect(() => {
+    useEffect(() => {
         const g = select(ref.current)
-        const drawSunSetChart = () => {
-            const lineSunPath = d3.area()
-                .x(function (d) { return x(d.hour) })
-                .y(function (d) { return y(d.sun) })
-                .curve(d3.curveMonotoneX)
-            g.append('path')
-                .data([(data)])
-                .attr('class', 'line-sun')
-                .style("stroke", 'orange')
-                .style("stroke-width", '2px')
-                .style("fill", 'none')
-                .attr('d', lineSunPath)
-        }
-
-        const lineRemove = () => {
-            g.selectAll('path')
-                .data([(data)])
-                .exit()
-                .remove('path')
-        }
-
-        drawSunSetChart()
-        window.addEventListener('resize', lineRemove)
-        window.addEventListener('resize', drawSunSetChart)
-        drawSunSetChart()
-
-    }, [width, height, data])
+        const lineSunPath = d3.area()
+            .x(function (d) { return x(d.hour) })
+            .y(function (d) { return y(d.sun) })
+            .curve(d3.curveMonotoneX)
+        g.append('path')
+            .data([(data)])
+            .attr('class', 'line-sun')
+            .style("stroke", 'orange')
+            .style("stroke-width", '2px')
+            .style("fill", 'none')
+            .attr('d', lineSunPath)
+    }, [width, height, data, x, y])
 
     return (
-        <g className='weather-container' ref={ref} />
+        <g className='sunset-chart' ref={ref} />
     )
 }
 

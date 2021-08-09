@@ -1,4 +1,4 @@
-import React, { useLayoutEffect, useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import * as d3 from 'd3'
 import TideChart from './TideChart'
 import SunsetChart from './SunsetChart'
@@ -10,7 +10,7 @@ export const ChartContainer = (props) => {
     const [width, setWidth] = useState(0)
     const [height, setHeight] = useState(0)
 
-    useLayoutEffect(() => {
+    useEffect(() => {
         const currentWidth = parseInt(d3.select('.svgchart').style('width'), "100%")
         const currentHeight = parseInt(d3.select('.svgchart').style('height'), "100%")
         setWidth(currentWidth * 6)
