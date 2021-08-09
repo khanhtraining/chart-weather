@@ -11,11 +11,11 @@ export const ChartContainer = (props) => {
     const [height, setHeight] = useState(0)
 
     useEffect(() => {
-        const currentWidth = parseInt(d3.select('.svgchart').style('width'), "100%")
-        const currentHeight = parseInt(d3.select('.svgchart').style('height'), "100%")
+        const currentWidth = parseInt(d3.select('.svgchart').style('width'), 10)
+        const currentHeight = parseInt(d3.select('.svgchart').style('height'), 10)
         setWidth(currentWidth * 6)
         setHeight(currentHeight)
-    }, [width, height, props.chartData])
+    }, [width, height])
 
     return (
         <div className='layout__container-chart'>
