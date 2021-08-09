@@ -15,14 +15,12 @@ export const ChartContainer = (props) => {
         const currentHeight = parseInt(d3.select('.svgchart').style('height'), "100%")
         setWidth(currentWidth * 6)
         setHeight(currentHeight)
-
     }, [width, height, props.chartData])
 
     return (
         <div className='layout__container-chart'>
-            <div className='svgchart'  >
-                <svg width={width}
-                    height={height}>
+            <div className='svgchart'>
+                <svg width={width} height={height}>
                     <TideChart width={width} height={height} data={props.chartData} />
                     <SunsetChart width={width} height={height} data={props.chartData} />
                     <PeriodChart width={width} height={height} data={props.chartData} />
