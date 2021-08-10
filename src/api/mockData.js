@@ -73,25 +73,21 @@ export const itemCard = [
     {
         id: 1,
         title: 'PSI',
-        number: '',
         status: 'Good'
     },
     {
         id: 2,
         title: 'WIND SPEED',
-        number: '',
         status: 'km/h'
     },
     {
         id: 3,
         title: 'DENGUE',
-        number: '',
         status: ''
     },
     {
         id: 4,
         title: '',
-        number: '',
         status: 'Add'
     }
 ]

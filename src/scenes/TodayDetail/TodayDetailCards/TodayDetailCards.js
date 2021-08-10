@@ -9,7 +9,7 @@ const TodayDetailCards = (props) => {
             {
                 <div className='todayDetailCards-wrapper'>
                     {itemCard.map((items) => {
-                        return <TodayDetailCard todayDetailCards={props.todayDeTail} key={items.id} {...items}></TodayDetailCard>
+                        return <TodayDetailCard todayDetailCards={props.todayDeTail} {...items}/>
                     })}
                 </div>
             }

@@ -18,7 +18,7 @@ const TodayDetailCard = (props) => {
                     id === 3 ? <div className='content circle-shape'></div> : null
                 }
                 {
-                    id === 4 ? <div className='add-icon' key={3}></div> : null
+                    id === 4 ? <div className='add-icon'></div> : null
                 }
                 <div className='extra'>{status}</div>
             </div>
