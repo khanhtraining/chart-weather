@@ -69,25 +69,3 @@ export const initialState = {
     ]
 }
 
-export const itemCard = [
-    {
-        id: 1,
-        title: 'PSI',
-        status: 'Good'
-    },
-    {
-        id: 2,
-        title: 'WIND SPEED',
-        status: 'km/h'
-    },
-    {
-        id: 3,
-        title: 'DENGUE',
-        status: ''
-    },
-    {
-        id: 4,
-        title: '',
-        status: 'Add'
-    }
-]
