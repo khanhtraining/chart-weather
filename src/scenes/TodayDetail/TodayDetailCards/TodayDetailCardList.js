@@ -1,25 +1,44 @@
 import React from 'react'
-import TodayDetailAdd from './TodayDetailAdd'
 import TodayDetailCard from './TodayDetailCard'
 import './todaydetailcards.scss'
 
 const TodayDetailCardList = (props) => {
     const itemCardList = [
         {
+            id: 1,
             title: 'PSI',
-            content: Math.round((props.todayDeTail?.main?.pressure) / 100),
-            extra: 'Good',
-            contentClassName: 'bg-number'
+            number: Math.round((props.todayDeTail?.main?.pressure) / 100),
+            content: 'Good',
+            className: 'content bg-number',
+            classTitle: 'title',
+            classContent: 'extra'
         },
         {
+            id: 2,
             title: 'WIND SPEED',
-            content: Math.round(props.todayDeTail?.wind?.speed),
-            extra: 'km/h',
-            contentClassName: 'normal-number'
+            number: Math.round(props.todayDeTail?.wind?.speed),
+            content: 'km/h',
+            className: 'content normal-number',
+            classTitle: 'title',
+            classContent: 'extra'
         },
         {
+            id: 3,
             title: 'DENGUE',
-            contentClassName: 'circle-shape'
+            number: '',
+            content: '',
+            className: 'content circle-shape',
+            classTitle: 'title',
+            classContent: 'extra'
+        },
+        {
+            id: 4,
+            title: '',
+            number: '',
+            content: 'Add',
+            className: 'add-icon',
+            classTitle: '',
+            classContent: 'add-text'
         }
     ]
 
@@ -27,10 +46,16 @@ const TodayDetailCardList = (props) => {
         <React.Fragment>
             {
                 <div className='todayDetailCards-wrapper'>
-                    {itemCardList.map((item) => {
-                        return <TodayDetailCard {...item} />
+                    {itemCardList.map((items) => {
+                        return <TodayDetailCard
+                            title={items.title}
+                            number={items.number}
+                            content={items.content}
+                            className={items.className}
+                            classTitle={items.classTitle}
+                            classContent={items.classContent}
+                            {...items} />
                     })}
-                    <TodayDetailAdd/>
                 </div>
             }
         </React.Fragment>
