@@ -23,14 +23,16 @@
             height: 30px;
             background-color: #69c75b;
             border-radius: 3px;
-            font-size: 24px;
-            padding: 5px;
+            font-size: 20px;
             text-align: center;
+            .number {
+                text-align: center;
+            }
         }
         .normal-number {
             width: 20px;
             height: 30px;
-            font-size: 30px;
+            font-size: 20px;
             text-align: center;
         }
 

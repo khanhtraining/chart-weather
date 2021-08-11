@@ -2,14 +2,14 @@ import React from 'react'
 import './todaydetailcards.scss'
 
 const TodayDetailCard = (props) => {
-    const { title, status, className, number } = props
-    console.log(number);
+    const { title, content, className, number, classTitle, classContent } = props
+
     return (
         <React.Fragment>
             <div className='todayDetailCards-wrapper-item'>
-                <div className='title'>{title}</div>
-                <div className={className}>{number}</div>
-                <div className='extra'>{status}</div>
+                <div className={classTitle}>{title}</div>
+                <div className={`my class ${className}`}>{number}</div>
+                <div className={classContent}>{content}</div>
             </div>
         </React.Fragment>
     )

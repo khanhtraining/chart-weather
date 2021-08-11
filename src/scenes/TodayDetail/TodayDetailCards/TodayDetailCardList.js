@@ -8,29 +8,37 @@ const TodayDetailCardList = (props) => {
             id: 1,
             title: 'PSI',
             number: Math.round((props.todayDeTail?.main?.pressure) / 100),
-            status: 'Good',
-            className: 'content bg-number'
+            content: 'Good',
+            className: 'content bg-number',
+            classTitle: 'title',
+            classContent: 'extra'
         },
         {
             id: 2,
             title: 'WIND SPEED',
             number: Math.round(props.todayDeTail?.wind?.speed),
-            status: 'km/h',
-            className: 'content normal-number'
+            content: 'km/h',
+            className: 'content normal-number',
+            classTitle: 'title',
+            classContent: 'extra'
         },
         {
             id: 3,
             title: 'DENGUE',
             number: '',
-            status: '',
-            className: 'content circle-shape'
+            content: '',
+            className: 'content circle-shape',
+            classTitle: 'title',
+            classContent: 'extra'
         },
         {
             id: 4,
             title: '',
             number: '',
-            status: 'Add',
-            className: 'add-icon'
+            content: 'Add',
+            className: 'add-icon',
+            classTitle: '',
+            classContent: 'add-text'
         }
     ]
 
@@ -42,8 +50,10 @@ const TodayDetailCardList = (props) => {
                         return <TodayDetailCard
                             title={items.title}
                             number={items.number}
-                            status={items.status}
+                            content={items.content}
                             className={items.className}
+                            classTitle={items.classTitle}
+                            classContent={items.classContent}
                             {...items} />
                     })}
                 </div>

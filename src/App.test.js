@@ -1,8 +1,10 @@
-import { render, screen } from '@testing-library/react';
-import App from './App';
+import { render } from '@testing-library/react'
+import App from './App'
 
-test('renders learn react link', () => {
-  render(<App />);
-  const linkElement = screen.getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
-});
+const appContainer = () => render(<App />); describe('App Container test', () => {
+  test('renders app test', () => {
+    const wrapper = appContainer()
+    const titleDiv = wrapper.getByText('WIND SPEED')
+    expect(titleDiv).toHaveClass('title')
+  })
+})
