@@ -7,7 +7,7 @@ export const TodayDetail = (props)=> {
     
     return (
         <div className='layout__container-todaydetail'>
-            <LocationSelect onSelect={props.onSelect} todayDeTail={props.weather} selectedLocationCity={props.selectedCity} />
+            <LocationSelect onSelect={props.onSelect}/>
             <TodayDetailHighlight todayDeTail={props.weather} todayHighLight={props.todayHighLight}/>
             <TodayDetailCardList todayDeTail={props.weather}/>
         </div>

@@ -30,7 +30,7 @@ const App = () => {
 
   return (
     <div className='layout__container'>
-      <TodayDetail onSelect={onSelect} selectedCity={selectedCity} weather={weather} todayHighLight={todayHighLight} />
+      <TodayDetail onSelect={onSelect} weather={weather} todayHighLight={todayHighLight} />
       <ChartContainer chartData={initialState.chartWeather} />
     </div>
   )
