@@ -7,11 +7,15 @@ import ChartContainer from './scenes/ChartContainer/ChartContainer'
 import '../src/App.scss'
 
 const App = () => {
-  const [selectedCity, setSelectedCity] = useState()
+  const [selectedCity, setSelectedCity] = useState('Singapore')
   const [weather, setWeather] = useState([])
   const [todayHighLight, setTodayHighLight] = useState(null)
+
+  const onSelect = (selectedOption) => {
+    setSelectedCity(selectedOption)
+  }
+
   useEffect(() => {
-    setSelectedCity(initialState.city[2])
     const selectCity = async () => {
       try {
         const response = await getWeatherData(selectedCity)
@@ -26,7 +30,7 @@ const App = () => {
 
   return (
     <div className='layout__container'>
-      <TodayDetail selectedCity={selectedCity} weather={weather} todayHighLight={todayHighLight} />
+      <TodayDetail onSelect={onSelect} selectedCity={selectedCity} weather={weather} todayHighLight={todayHighLight} />
       <ChartContainer chartData={initialState.chartWeather} />
     </div>
   )

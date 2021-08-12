@@ -22,7 +22,12 @@
         .nav-location-dropdown {
             display: flex;
             align-items: center;
-            color: rgb(255, 255, 255);
+            color: #ffffff;
+            font-size: 14px;
+            width: 100px;
+            height: 25px;
+            border: 0px;
+            background-color: #3c73bb;
             .icon-arrow {
                 display: inline-block;
                 width: 15px;
