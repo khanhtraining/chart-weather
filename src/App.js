@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react'
 import React from '@babel/template'
 import { getWeatherData } from './utils'
-import { initialState } from './api/mockData'
+import { chartWeather } from './api/mockData'
 import TodayDetail from './scenes/TodayDetail/TodayDetail'
 import ChartContainer from './scenes/ChartContainer/ChartContainer'
 import '../src/App.scss'
@@ -31,7 +31,7 @@ const App = () => {
   return (
     <div className='layout__container'>
       <TodayDetail onSelect={onSelect} weather={weather} todayHighLight={todayHighLight} />
-      <ChartContainer chartData={initialState.chartWeather} />
+      <ChartContainer chartData={chartWeather} />
     </div>
   )
 }
