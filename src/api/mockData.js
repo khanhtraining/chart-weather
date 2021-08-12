@@ -1,5 +1,4 @@
 export const initialState = {
-    city: ['Ho Chi Minh', 'Ha Noi', 'Singapore'],
     chartWeather: [
         {
             tide: 0.8,

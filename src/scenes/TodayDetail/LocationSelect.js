@@ -16,18 +16,19 @@ export const LocationSelect = (props) => {
                 <div className='nav-location'>
                     <div className='nav-location-name'>myENV</div>
                     <div className='nav-location-dropdown'>
-                        <span data-testid='today' className='nav-location-dropdown'>
-                            <select className='nav-location-dropdown' name="locations" id="locations" onChange={(e) => setSelectedOption(e.target.value)} >
-                                <option value="Singapore">Singapore</option>
-                                <option value="London">Lôn Đôn</option>
-                                <option value="Ho Chi Minh">Hồ Chí Minh</option>
-                            </select>
-                        </span>
+                        <select className='nav-location-dropdown' name="locations" id="locations" onChange={(e) => setSelectedOption(e.target.value)} >
+                            <option value="Singapore">Singapore</option>
+                            <option value="Cambridge">Cambridge</option>
+                            <option value="Ho Chi Minh City">Ho Chi Minh</option>
+                            <option value="Washington D.C.">Washington</option>
+                            <option value="Manchester">Manchester</option>
+                            <option value="Venezuela">Venezuela</option>
+                        </select>
                     </div>
                 </div>
                 <div className='nav-notification'></div>
             </div>
-        </div>
+        </div >
     )
 }
 
