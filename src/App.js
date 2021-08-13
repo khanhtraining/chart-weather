@@ -3,6 +3,7 @@ import React from '@babel/template'
 import { getWeatherData } from './utils'
 import { chartWeather } from './api/mockData'
 import TodayDetail from './scenes/TodayDetail/TodayDetail'
+import LocationSelect from './scenes/LocationSelect/LocationSelect'
 import ChartContainer from './scenes/ChartContainer/ChartContainer'
 import '../src/App.scss'
 
@@ -30,7 +31,10 @@ const App = () => {
 
   return (
     <div className='layout__container'>
-      <TodayDetail onSelect={onSelect} weather={weather} todayHighLight={todayHighLight} />
+      <div className='layout__container-todaydetail'>
+        <LocationSelect onSelect={onSelect} />
+        <TodayDetail weather={weather} todayHighLight={todayHighLight} />
+      </div>
       <ChartContainer chartData={chartWeather} />
     </div>
   )
