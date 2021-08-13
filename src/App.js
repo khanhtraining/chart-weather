@@ -1,39 +1,36 @@
-import { useEffect, useState } from 'react'
-import React from '@babel/template'
-import { getWeatherData } from './utils'
+import { useCallback, useEffect, useState } from 'react'
+import axios from 'axios'
 import { chartWeather } from './api/mockData'
 import TodayDetail from './scenes/TodayDetail/TodayDetail'
 import LocationSelect from './scenes/LocationSelect/LocationSelect'
 import ChartContainer from './scenes/ChartContainer/ChartContainer'
+import { locationUrl, API_KEY } from './constants'
 import '../src/App.scss'
 
 const App = () => {
-  const [selectedCity, setSelectedCity] = useState('Singapore')
+  const [location , setLocation] = useState('Singapore')
   const [weather, setWeather] = useState([])
-  const [todayHighLight, setTodayHighLight] = useState(null)
+  const [highlight, setHighlight] = useState(null)
 
-  const onSelect = (selectedOption) => {
-    setSelectedCity(selectedOption)
+  const onSelect = (selectedLocation) => {
+    setLocation(selectedLocation)
   }
 
+  const loadWeatherData = useCallback(async () => {
+    const response = await axios.get(`${locationUrl}?q=${location}&appid=${API_KEY}`)
+    setWeather(response.data)
+    setHighlight(response.data.weather[0])
+  }, [location])
+
   useEffect(() => {
-    const selectCity = async () => {
-      try {
-        const response = await getWeatherData(selectedCity)
-        setWeather(response.data)
-        setTodayHighLight(response.data.weather[0])
-      } catch (error) {
-        console.error('Error selected city:', error)
-      }
-    }
-    selectCity()
-  }, [selectedCity])
+    loadWeatherData()
+  }, [loadWeatherData])
 
   return (
     <div className='layout__container'>
-      <div className='layout__container-todaydetail'>
+      <div className='layout__container-upper-section'>
         <LocationSelect onSelect={onSelect} />
-        <TodayDetail weather={weather} todayHighLight={todayHighLight} />
+        <TodayDetail weather={weather} highlight={highlight} />
       </div>
       <ChartContainer chartData={chartWeather} />
     </div>

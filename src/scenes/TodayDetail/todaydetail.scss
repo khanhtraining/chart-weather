@@ -2,7 +2,7 @@
     width: 100vw;
     height: 100vh;
     overflow: none;
-    &-todaydetail {
+    &-upper-section {
         height: 60%;
         width: 100%;
         background: linear-gradient(
@@ -12,7 +12,6 @@
             rgba(0, 172, 255, 0.319765)
         );
     }
-
     &-chart {
         height: 40%;
         width: 100%;

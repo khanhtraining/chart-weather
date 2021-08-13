@@ -1,4 +1,3 @@
-
 export const chartWeather = [
     {
         tide: 0.8,

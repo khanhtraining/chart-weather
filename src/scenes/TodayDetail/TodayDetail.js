@@ -1,13 +1,14 @@
-import React from 'react'
 import TodayDetailHighlight from './TodayDetailHighlight'
+import TodayDetailCardList from './TodayDetailCardList/TodayDetailCardList'
 import './todaydetail.scss'
-import TodayDetailCardList from './TodayDetailCards/TodayDetailCardList'
-export const TodayDetail = (props)=> {
-    
+
+const TodayDetail = (props) => {
+    const { weather, highlight } = props
+
     return (
         <div>
-            <TodayDetailHighlight todayDeTail={props.weather} todayHighLight={props.todayHighLight}/>
-            <TodayDetailCardList todayDeTail={props.weather}/>
+            <TodayDetailHighlight weather={weather} highlight={highlight} />
+            <TodayDetailCardList weather={weather} />
         </div>
     )
 }
