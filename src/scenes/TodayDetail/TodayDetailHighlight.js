@@ -12,11 +12,11 @@ const TodayDetailHighlight = (props) => {
                     }
                 </div>
                 <div className="todayDetailHighlight-wrapper__info">
-                    {props.todayHighLight ? <div className="highlight-text">{props.todayHighLight?.main}</div> : <>
+                    {props.todayHighLight ? <div className="highlight-text">{props.todayHighLight?.main || 'Not found'}</div> : <>
                     </>}
                     <div className="highlight-info">
-                        <span className="highlight-temperature">{Math.round((props.todayDeTail?.main?.temp) / 10)}°C</span>
-                        <span className="highlight-humidity">{Math.round((props.todayDeTail?.main?.humidity))}%</span>
+                        <span className="highlight-temperature">{Math.round((props.todayDeTail?.main?.temp) / 10) || '--'}°C</span>
+                        <span className="highlight-humidity">{Math.round((props.todayDeTail?.main?.humidity)) || '--'}%</span>
                     </div>
                 </div>
             </div>

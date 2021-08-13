@@ -7,13 +7,13 @@ const TodayDetailCardList = (props) => {
     const itemCardList = [
         {
             title: 'PSI',
-            content: Math.round((props.todayDeTail?.main?.pressure) / 100),
+            content: Math.round((props.todayDeTail?.main?.pressure) / 100) || '--',
             extra: 'Good',
             contentClassName: 'bg-number'
         },
         {
             title: 'WIND SPEED',
-            content: Math.round(props.todayDeTail?.wind?.speed),
+            content: Math.round(props.todayDeTail?.wind?.speed) || '--',
             extra: 'km/h',
             contentClassName: 'normal-number'
         },
