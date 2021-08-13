@@ -2,7 +2,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    // height: 40%;
     margin-top: 3em;
     .todayDetailHighlight-wrapper__icon {
         width: 80px;
@@ -64,7 +63,6 @@
         }
     }
 }
-
 
 @media screen and (max-height: 496px) {
     .todayDetailHighlight-wrapper {

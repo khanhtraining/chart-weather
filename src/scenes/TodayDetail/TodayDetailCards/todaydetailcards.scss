@@ -73,12 +73,6 @@
     }
 }
 
-@media screen and (max-width: 694px) {
-    .todayDetailCards-wrapper {
-        margin-top: 1em;
-    }
-}
-
 @media screen and (max-height: 596px) {
     .todayDetailCards-wrapper {
         margin-top: 3em;
@@ -90,6 +84,7 @@
         }
     }
 }
+
 @media screen and (max-height: 496px) {
     .todayDetailCards-wrapper {
         margin-top: 0em;
