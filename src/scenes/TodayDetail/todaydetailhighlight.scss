@@ -2,7 +2,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 40%;
+    // height: 40%;
     margin-top: 3em;
     .todayDetailHighlight-wrapper__icon {
         width: 80px;
@@ -47,6 +47,35 @@
 }
 @media screen and (max-width: 694px) {
     .todayDetailHighlight-wrapper {
-    margin-top: 1em;
+        margin-top: 1em;
+    }
+}
+
+@media screen and (max-height: 596px) {
+    .todayDetailHighlight-wrapper {
+        height: 40%;
+        margin-top: 1em;
+        .todayDetailHighlight-wrapper__info {
+            margin-left: 20px;
+            font-size: 25px;
+            .highlight-text {
+                font-size: 25px;
+            }
+        }
+    }
+}
+
+
+@media screen and (max-height: 496px) {
+    .todayDetailHighlight-wrapper {
+        height: 40%;
+        margin-top: 0em;
+        .todayDetailHighlight-wrapper__info {
+            margin-left: 20px;
+            font-size: 15px;
+            .highlight-text {
+                font-size: 15px;
+            }
+        }
     }
 }

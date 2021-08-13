@@ -1,6 +1,6 @@
 .todayDetailCards-wrapper {
     display: flex;
-    margin-top: 4em;
+    margin-top: 3em;
     padding-right: 1em;
     .todayDetailCards-wrapper-item {
         display: flex;
@@ -75,6 +75,29 @@
 
 @media screen and (max-width: 694px) {
     .todayDetailCards-wrapper {
-        margin-top: 2em;
+        margin-top: 1em;
+    }
+}
+
+@media screen and (max-height: 596px) {
+    .todayDetailCards-wrapper {
+        margin-top: 3em;
+        .todayDetailCards-wrapper-item {
+            height: 100px;
+            .title {
+                font-size: 12px;
+            }
+        }
+    }
+}
+@media screen and (max-height: 496px) {
+    .todayDetailCards-wrapper {
+        margin-top: 0em;
+        .todayDetailCards-wrapper-item {
+            height: 100px;
+            .title {
+                font-size: 12px;
+            }
+        }
     }
 }
