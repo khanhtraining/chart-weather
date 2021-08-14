@@ -2,12 +2,12 @@ import TodayDetailHighlight from './TodayDetailHighlight'
 import TodayDetailCardList from './TodayDetailCardList/TodayDetailCardList'
 
 const TodayDetail = (props) => {
-    const { weatherData } = props
+    const { icon, title, temp, humidity, feelsLike, speed } = props
 
     return (
         <div>
-            <TodayDetailHighlight icon={weatherData} title={weatherData} temp={weatherData} humidity={weatherData} />
-            <TodayDetailCardList feelsLike={weatherData} speed={weatherData} />
+            <TodayDetailHighlight icon={icon} title={title} temp={temp} humidity={humidity} />
+            <TodayDetailCardList feelsLike={feelsLike} speed={speed} />
         </div>
     )
 }

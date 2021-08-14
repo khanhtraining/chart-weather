@@ -8,13 +8,13 @@ const TodayDetailCardList = (props) => {
     const itemCardList = [
         {
             title: 'PSI',
-            content: Math.round((feelsLike?.main?.feels_like) / 10),
+            content: feelsLike,
             extra: 'Good',
             contentClassName: 'bg-number'
         },
         {
             title: 'WIND SPEED',
-            content: Math.round(speed?.wind?.speed),
+            content: speed,
             extra: 'km/h',
             contentClassName: 'normal-number'
         },

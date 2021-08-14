@@ -16,18 +16,24 @@ const App = () => {
   }
 
   useEffect(() => {
-    const loadWeatherData = async () => {
-      const response = await axios.get(`${locationUrl}?q=${location}&appid=${API_KEY}`)
-      setWeatherData(response.data)
-    }
-    loadWeatherData()
+    axios.get(`${locationUrl}?q=${location}&appid=${API_KEY}`)
+      .then(response => {
+        setWeatherData(response.data)
+      })
   }, [location])
 
   return (
     <div className='layout__container'>
       <div className='layout__container-upper-section'>
         <LocationSelect onSelect={onSelect} />
-        <TodayDetail weatherData={weatherData} />
+        <TodayDetail
+          icon={weatherData.weather && weatherData?.weather[0]?.icon}
+          title={weatherData.weather && weatherData?.weather[0]?.main}
+          temp={Math.round((weatherData?.main?.temp) / 10)}
+          humidity={Math.round(weatherData?.main?.humidity)}
+          feelsLike={Math.round((weatherData?.main?.feels_like) / 10)}
+          speed={Math.round(weatherData?.wind?.speed)}
+        />
       </div>
       <ChartContainer chartData={chartWeather} />
     </div>
