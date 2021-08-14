@@ -4,17 +4,17 @@ import TodayDetailCard from './TodayDetailCard'
 import './todaydetailcards.scss'
 
 const TodayDetailCardList = (props) => {
-    const { weather } = props
+    const { feelsLike, speed } = props
     const itemCardList = [
         {
             title: 'PSI',
-            content: Math.round((weather?.main?.feels_like) / 10),
+            content: Math.round((feelsLike?.main?.feels_like) / 10),
             extra: 'Good',
             contentClassName: 'bg-number'
         },
         {
             title: 'WIND SPEED',
-            content: Math.round(weather?.wind?.speed),
+            content: Math.round(speed?.wind?.speed),
             extra: 'km/h',
             contentClassName: 'normal-number'
         },
