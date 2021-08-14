@@ -6,7 +6,7 @@ import SunriseChart from './SunriseChart'
 import PeriodChart from './PeriodChart'
 import './chart.scss'
 
-export const ChartContainer = (props) => {
+const ChartContainer = (props) => {
     const [width, setWidth] = useState(0)
     const [height, setHeight] = useState(0)
 
