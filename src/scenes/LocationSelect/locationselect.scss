@@ -13,7 +13,6 @@
             margin: 6px 0;
         }
     }
-
     .nav-location {
         height: 35px;
         text-align: center;
@@ -22,7 +21,15 @@
         .nav-location-dropdown {
             display: flex;
             align-items: center;
-            color: rgb(255, 255, 255);
+            color: #ffffff;
+            font-size: 15px;
+            width: 7em;
+            height: 2em;
+            border: 0px;
+            box-shadow: none;
+            background-color: #3c73bb;
+            overflow: hidden;
+            outline: 5px;
             .icon-arrow {
                 display: inline-block;
                 width: 15px;
@@ -47,7 +54,6 @@
             }
         }
     }
-
     .nav-notification {
         width: 30px;
         height: 30px;

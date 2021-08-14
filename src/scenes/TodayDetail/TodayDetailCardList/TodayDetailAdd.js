@@ -1,7 +1,7 @@
-import React from 'react'
 import './todaydetailcards.scss'
 
-export const TodayDetailAdd = () => {
+const TodayDetailAdd = () => {
+
     return (
         <div className='todayDetailCards-wrapper-item'>
             <div className='add-icon'></div>

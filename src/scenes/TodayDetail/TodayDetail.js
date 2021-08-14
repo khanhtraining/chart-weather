@@ -1,15 +1,18 @@
-import React from 'react'
-import LocationSelect from './LocationSelect'
 import TodayDetailHighlight from './TodayDetailHighlight'
-import './todaydetail.scss'
-import TodayDetailCardList from './TodayDetailCards/TodayDetailCardList'
-export const TodayDetail = (props)=> {
-    
+import TodayDetailCardList from './TodayDetailCardList/TodayDetailCardList'
+
+const TodayDetail = ({ weatherData }) => {
+    const icon = weatherData.weather && weatherData.weather[0]?.icon
+    const title = weatherData.weather && weatherData.weather[0]?.main
+    const temp = weatherData.main?.temp
+    const humidity = weatherData.main?.humidity
+    const feelsLike = weatherData.main?.feels_like
+    const speed = weatherData.wind?.speed
+
     return (
-        <div className='layout__container-todaydetail'>
-            <LocationSelect todayDeTail={props.weather} selectedLocationCity={props.selectedCity} />
-            <TodayDetailHighlight todayDeTail={props.weather} todayHighLight={props.todayHighLight}/>
-            <TodayDetailCardList todayDeTail={props.weather}/>
+        <div>
+            <TodayDetailHighlight icon={icon} title={title} temp={temp} humidity={humidity} />
+            <TodayDetailCardList feelsLike={feelsLike} speed={speed} />
         </div>
     )
 }

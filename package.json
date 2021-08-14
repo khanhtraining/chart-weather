@@ -57,11 +57,15 @@
     "@testing-library/react-hooks": "^7.0.1"
   },
   "plugins": [
-    "react-hooks"
+    "react-hooks",
+    "jsx-a11y"
   ],
   "rules": {
-    "react-hooks/rules-of-hooks": "error",
-    "react-hooks/exhaustive-deps": "off",
-    "checkForEach": false
+    "jsx-a11y/aria-role": [
+      "error",
+      {
+        "ignoreNonDom": true
+      }
+    ]
   }
 }
