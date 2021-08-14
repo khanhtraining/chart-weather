@@ -5,6 +5,7 @@ import SunsetChart from './SunsetChart'
 import SunriseChart from './SunriseChart'
 import PeriodChart from './PeriodChart'
 import './chart.scss'
+import '../../App.scss'
 
 const ChartContainer = (props) => {
     const { chartData } = props

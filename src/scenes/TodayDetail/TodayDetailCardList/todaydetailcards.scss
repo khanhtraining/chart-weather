@@ -10,7 +10,6 @@
         justify-content: space-between;
         align-items: center;
         border-right: 1px solid #ffffff;
-
         .title {
             font-weight: 500;
             font-size: 13px;
@@ -37,7 +36,6 @@
             font-size: 20px;
             text-align: center;
         }
-
         .circle-shape {
             width: 40px;
             height: 40px;
@@ -45,7 +43,6 @@
             background-color: rgb(168, 218, 249);
             border: 2px solid #ffffff;
         }
-
         .add-icon {
             display: flex;
             width: 30px;
@@ -103,13 +100,11 @@
                 height: 20px;
                 font-size: 13px;
             }
-    
             .circle-shape {
                 width: 20px;
                 height: 20px;
                 border: 1px solid #ffffff;
             }
-    
             .add-icon {
                 width: 20px;
                 height: 20px;

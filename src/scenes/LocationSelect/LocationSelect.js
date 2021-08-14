@@ -1,4 +1,3 @@
-import React from 'react'
 import './locationselect.scss'
 
 export const LocationSelect = (props) => {
