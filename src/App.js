@@ -26,14 +26,7 @@ const App = () => {
     <div className='layout__container'>
       <div className='layout__container-upper-section'>
         <LocationSelect onSelect={onSelect} />
-        <TodayDetail
-          icon={weatherData.weather && weatherData?.weather[0]?.icon}
-          title={weatherData.weather && weatherData?.weather[0]?.main}
-          temp={Math.round((weatherData?.main?.temp) / 10)}
-          humidity={Math.round(weatherData?.main?.humidity)}
-          feelsLike={Math.round((weatherData?.main?.feels_like) / 10)}
-          speed={Math.round(weatherData?.wind?.speed)}
-        />
+        <TodayDetail weatherData={weatherData} />
       </div>
       <ChartContainer chartData={chartWeather} />
     </div>
