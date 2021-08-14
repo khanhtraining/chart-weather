@@ -7,6 +7,7 @@ import PeriodChart from './PeriodChart'
 import './chart.scss'
 
 const ChartContainer = (props) => {
+    const { chartData } = props
     const [width, setWidth] = useState(0)
     const [height, setHeight] = useState(0)
 
@@ -21,10 +22,10 @@ const ChartContainer = (props) => {
         <div className='layout__container-chart'>
             <div className='svgchart'>
                 <svg width={width} height={height}>
-                    <TideChart width={width} height={height} data={props.chartData} />
-                    <SunsetChart width={width} height={height} data={props.chartData} />
-                    <PeriodChart width={width} height={height} data={props.chartData} />
-                    <SunriseChart width={width} height={height} data={props.chartData} />
+                    <TideChart width={width} height={height} data={chartData} />
+                    <SunsetChart width={width} height={height} data={chartData} />
+                    <PeriodChart width={width} height={height} data={chartData} />
+                    <SunriseChart width={width} height={height} data={chartData} />
                 </svg>
             </div>
             <div className='layout__container-chart--title'>
