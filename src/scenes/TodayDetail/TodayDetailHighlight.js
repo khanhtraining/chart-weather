@@ -13,7 +13,7 @@ const TodayDetailHighlight = (props) => {
                 <div className="todayDetailHighlight-wrapper__info">
                     <div className="highlight-text">{title}</div>
                     <div className="highlight-info">
-                        <span className="highlight-temperature">{temp}°C</span>
+                        <span className="highlight-temperature">{Math.round((temp)/10)}°C</span>
                         <span className="highlight-humidity">{humidity}%</span>
                     </div>
                 </div>
