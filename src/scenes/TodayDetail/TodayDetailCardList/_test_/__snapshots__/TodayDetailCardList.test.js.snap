@@ -1,0 +1,217 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`snapshot testing snapshot for Today Detail Card List component 1`] = `
+<div
+  className="todayDetailCards-wrapper"
+>
+  <div
+    className="todayDetailCards-wrapper-item"
+  >
+    <div
+      className="title"
+    >
+      PSI
+    </div>
+    <div
+      className="content bg-number"
+    >
+      NaN
+    </div>
+    <div
+      className="extra"
+    >
+      Good
+    </div>
+  </div>
+  <div
+    className="todayDetailCards-wrapper-item"
+  >
+    <div
+      className="title"
+    >
+      WIND SPEED
+    </div>
+    <div
+      className="content normal-number"
+    >
+      NaN
+    </div>
+    <div
+      className="extra"
+    >
+      km/h
+    </div>
+  </div>
+  <div
+    className="todayDetailCards-wrapper-item"
+  >
+    <div
+      className="title"
+    >
+      DENGUE
+    </div>
+    <div
+      className="content circle-shape"
+    />
+    <div
+      className="extra"
+    />
+  </div>
+  <div
+    className="todayDetailCards-wrapper-item"
+  >
+    <div
+      className="add-icon"
+    />
+    <div
+      className="add-text"
+    >
+      Add
+    </div>
+  </div>
+</div>
+`;
+
+exports[`snapshot testing snapshot for Today Detail component 1`] = `
+<div
+  className="todayDetailCards-wrapper"
+>
+  <div
+    className="todayDetailCards-wrapper-item"
+  >
+    <div
+      className="title"
+    >
+      PSI
+    </div>
+    <div
+      className="content bg-number"
+    >
+      NaN
+    </div>
+    <div
+      className="extra"
+    >
+      Good
+    </div>
+  </div>
+  <div
+    className="todayDetailCards-wrapper-item"
+  >
+    <div
+      className="title"
+    >
+      WIND SPEED
+    </div>
+    <div
+      className="content normal-number"
+    >
+      NaN
+    </div>
+    <div
+      className="extra"
+    >
+      km/h
+    </div>
+  </div>
+  <div
+    className="todayDetailCards-wrapper-item"
+  >
+    <div
+      className="title"
+    >
+      DENGUE
+    </div>
+    <div
+      className="content circle-shape"
+    />
+    <div
+      className="extra"
+    />
+  </div>
+  <div
+    className="todayDetailCards-wrapper-item"
+  >
+    <div
+      className="add-icon"
+    />
+    <div
+      className="add-text"
+    >
+      Add
+    </div>
+  </div>
+</div>
+`;
+
+exports[`snapshot testing snapshot for today detail card_list component 1`] = `
+<div
+  className="todayDetailCards-wrapper"
+>
+  <div
+    className="todayDetailCards-wrapper-item"
+  >
+    <div
+      className="title"
+    >
+      PSI
+    </div>
+    <div
+      className="content bg-number"
+    >
+      NaN
+    </div>
+    <div
+      className="extra"
+    >
+      Good
+    </div>
+  </div>
+  <div
+    className="todayDetailCards-wrapper-item"
+  >
+    <div
+      className="title"
+    >
+      WIND SPEED
+    </div>
+    <div
+      className="content normal-number"
+    >
+      NaN
+    </div>
+    <div
+      className="extra"
+    >
+      km/h
+    </div>
+  </div>
+  <div
+    className="todayDetailCards-wrapper-item"
+  >
+    <div
+      className="title"
+    >
+      DENGUE
+    </div>
+    <div
+      className="content circle-shape"
+    />
+    <div
+      className="extra"
+    />
+  </div>
+  <div
+    className="todayDetailCards-wrapper-item"
+  >
+    <div
+      className="add-icon"
+    />
+    <div
+      className="add-text"
+    >
+      Add
+    </div>
+  </div>
+</div>
+`;

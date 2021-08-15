@@ -1,0 +1,112 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`snapshot testing snapshot for Location component 1`] = `
+<div
+  className="todayDetailHighlight-wrapper"
+>
+  <div
+    className="todayDetailHighlight-wrapper__icon"
+  >
+    <img
+      alt="cloud-icon"
+      src="http://openweathermap.org/img/wn/undefined@2x.png"
+    />
+  </div>
+  <div
+    className="todayDetailHighlight-wrapper__info"
+  >
+    <div
+      className="highlight-text"
+    />
+    <div
+      className="highlight-info"
+    >
+      <span
+        className="highlight-temperature"
+      >
+        NaN
+        °C
+      </span>
+      <span
+        className="highlight-humidity"
+      >
+        %
+      </span>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`snapshot testing snapshot for Today Detail Highlight component 1`] = `
+<div
+  className="todayDetailHighlight-wrapper"
+>
+  <div
+    className="todayDetailHighlight-wrapper__icon"
+  >
+    <img
+      alt="cloud-icon"
+      src="http://openweathermap.org/img/wn/undefined@2x.png"
+    />
+  </div>
+  <div
+    className="todayDetailHighlight-wrapper__info"
+  >
+    <div
+      className="highlight-text"
+    />
+    <div
+      className="highlight-info"
+    >
+      <span
+        className="highlight-temperature"
+      >
+        NaN
+        °C
+      </span>
+      <span
+        className="highlight-humidity"
+      >
+        %
+      </span>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`snapshot testing snapshot for today detail highlight component 1`] = `
+<div
+  className="todayDetailHighlight-wrapper"
+>
+  <div
+    className="todayDetailHighlight-wrapper__icon"
+  >
+    <img
+      alt="cloud-icon"
+      src="http://openweathermap.org/img/wn/undefined@2x.png"
+    />
+  </div>
+  <div
+    className="todayDetailHighlight-wrapper__info"
+  >
+    <div
+      className="highlight-text"
+    />
+    <div
+      className="highlight-info"
+    >
+      <span
+        className="highlight-temperature"
+      >
+        NaN
+        °C
+      </span>
+      <span
+        className="highlight-humidity"
+      >
+        %
+      </span>
+    </div>
+  </div>
+</div>
+`;

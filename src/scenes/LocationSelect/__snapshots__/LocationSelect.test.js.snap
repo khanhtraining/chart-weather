@@ -1,0 +1,137 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`snapshot testing snapshot for Location Select component 1`] = `
+<div>
+  <div
+    className="nav-container"
+  >
+    <div
+      className="nav-burger"
+    >
+      <span />
+      <span />
+      <span />
+    </div>
+    <div
+      className="nav-location"
+    >
+      <div
+        className="nav-location-name"
+      >
+        myENV
+      </div>
+      <div
+        className="nav-location-dropdown"
+      >
+        <select
+          className="nav-location-dropdown"
+          data-testid="select"
+          onChange={[Function]}
+        >
+          <option
+            avalue="Singapore"
+          >
+            Singapore
+          </option>
+          <option
+            value="Cambridge"
+          >
+            Cambridge
+          </option>
+          <option
+            value="Ho Chi Minh City"
+          >
+            Ho Chi Minh
+          </option>
+          <option
+            value="Washington D.C."
+          >
+            Washington
+          </option>
+          <option
+            value="Manchester"
+          >
+            Manchester
+          </option>
+          <option
+            value="Venezuela"
+          >
+            Venezuela
+          </option>
+        </select>
+      </div>
+    </div>
+    <div
+      className="nav-notification"
+    />
+  </div>
+</div>
+`;
+
+exports[`snapshot testing snapshot for Location component 1`] = `
+<div>
+  <div
+    className="nav-container"
+  >
+    <div
+      className="nav-burger"
+    >
+      <span />
+      <span />
+      <span />
+    </div>
+    <div
+      className="nav-location"
+    >
+      <div
+        className="nav-location-name"
+      >
+        myENV
+      </div>
+      <div
+        className="nav-location-dropdown"
+      >
+        <select
+          className="nav-location-dropdown"
+          data-testid="select"
+          onChange={[Function]}
+        >
+          <option
+            value="Singapore"
+          >
+            Singapore
+          </option>
+          <option
+            value="Cambridge"
+          >
+            Cambridge
+          </option>
+          <option
+            value="Ho Chi Minh City"
+          >
+            Ho Chi Minh
+          </option>
+          <option
+            value="Washington D.C."
+          >
+            Washington
+          </option>
+          <option
+            value="Manchester"
+          >
+            Manchester
+          </option>
+          <option
+            value="Venezuela"
+          >
+            Venezuela
+          </option>
+        </select>
+      </div>
+    </div>
+    <div
+      className="nav-notification"
+    />
+  </div>
+</div>
+`;

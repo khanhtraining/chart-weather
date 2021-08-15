@@ -19,6 +19,7 @@ const App = () => {
     axios.get(`${locationUrl}?q=${location}&appid=${API_KEY}`)
       .then(response => {
         setWeatherData(response.data)
+        console.log(response.data);
       })
   }, [location])
 

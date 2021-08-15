@@ -1,0 +1,7 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`snapshot testing snapshot for tide chart component 1`] = `
+<g
+  className="tide-chart"
+/>
+`;
