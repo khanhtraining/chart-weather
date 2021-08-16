@@ -67,48 +67,50 @@ export const chartWeather = [
 ]
 
 export const mockDataTest = {
-    "coord": {
-        "lon": 103.8501,
-        "lat": 1.2897
-    },
-    "weather": [
-        {
-            "id": 522,
-            "main": "Rain",
-            "description": "heavy intensity shower rain",
-            "icon": "09n"
-        }
-    ],
-    "base": "stations",
-    "main": {
-        "temp": 300.32,
-        "feels_like": 303.27,
-        "temp_min": 298.23,
-        "temp_max": 302.12,
-        "pressure": 1012,
-        "humidity": 80
-    },
-    "visibility": 10000,
-    "wind": {
-        "speed": 4.12,
-        "deg": 40
-    },
-    "rain": {
-        "1h": 0.13
-    },
-    "clouds": {
-        "all": 40
-    },
-    "dt": 1629035191,
-    "sys": {
-        "type": 1,
-        "id": 9470,
-        "country": "SG",
-        "sunrise": 1628982272,
-        "sunset": 1629026038
-    },
-    "timezone": 28800,
-    "id": 1880252,
-    "name": "Singapore",
-    "cod": 200
+    data: {
+        'coord': {
+            'lon': 103.8501,
+            'lat': 1.2897
+        },
+        'weather': [
+            {
+                'id': 522,
+                'main': "Rain",
+                'description': 'heavy intensity shower rain',
+                'icon': '09n'
+            }
+        ],
+        'base': 'stations',
+        'main': {
+            'temp': 300.32,
+            'feels_like': 303.27,
+            'temp_min': 298.23,
+            'temp_max': 302.12,
+            'pressure': 1012,
+            'humidity': 80
+        },
+        'visibility': 10000,
+        'wind': {
+            'speed': 4.12,
+            'deg': 40
+        },
+        'rain': {
+            '1h': 0.13
+        },
+        'clouds': {
+            'all': 40
+        },
+        'dt': 1629035191,
+        'sys': {
+            'type': 1,
+            'id': 9470,
+            'country': 'SG',
+            'sunrise': 1628982272,
+            'sunset': 1629026038
+        },
+        'timezone': 28800,
+        'id': 1880252,
+        'name': 'Singapore',
+        'cod': 200
+    }
 }
