@@ -7,7 +7,7 @@ import { hcmWeather, singaporeWeather } from './api/mockData'
 jest.mock('axios')
 
 describe('User action', () => {
-    test('should display the weather detail when load page', async () => {
+    test('should display Singapore weather when load page', async () => {
         axios.get = jest.fn().mockResolvedValueOnce(singaporeWeather)
         const { getByText } = render(<App />)
 
@@ -21,11 +21,13 @@ describe('User action', () => {
         expect(getByText(/4/, { selector: '.normal-number' })).toBeInTheDocument()
     })
 
-    test('should display the weather detail when users select a location', async () => {
-        axios.get = jest.fn().mockResolvedValueOnce(singaporeWeather).mockResolvedValueOnce(hcmWeather)
-        const { getByTestId, getByText } = render(<App />)
+    test('should display the weather detail of selected location when users select a location', async () => {
+        axios.get = jest.fn()
+            .mockResolvedValueOnce(singaporeWeather)
+            .mockResolvedValueOnce(hcmWeather)
+        const { container, getByText } = render(<App />)
 
-        fireEvent.change(getByTestId('select'), {
+        fireEvent.change( container.querySelector('select.nav-location-dropdown'), {
             target: { value: 'Ho Chi Minh City' }
         })
 

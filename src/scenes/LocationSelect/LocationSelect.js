@@ -15,7 +15,6 @@ const LocationSelect = (props) => {
                     <div className='nav-location-name'>myENV</div>
                     <div className='nav-location-dropdown'>
                         <select className='nav-location-dropdown'
-                            data-testid='select'
                             onChange={e => onSelect(e.target.value)} >
                             <option avalue='Singapore'>Singapore</option>
                             <option value='Cambridge'>Cambridge</option>
