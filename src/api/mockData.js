@@ -66,7 +66,7 @@ export const chartWeather = [
     },
 ]
 
-export const mockDataTest = {
+export const singaporeWeather = {
     data: {
         'coord': {
             'lon': 103.8501,
@@ -111,6 +111,52 @@ export const mockDataTest = {
         'timezone': 28800,
         'id': 1880252,
         'name': 'Singapore',
+        'cod': 200
+    }
+}
+
+export const hcmWeather = {
+    data: {
+        'coord': {
+            'lon': 106.6667,
+            'lat': 10.75
+        },
+        'weather': [
+            {
+                'id': 802,
+                'main': 'Clouds',
+                'description': 'scattered clouds',
+                'icon': '03d'
+            }
+        ],
+        'base': 'stations',
+        'main': {
+            'temp': 307.16,
+            'feels_like': 310.28,
+            'temp_min': 307.16,
+            'temp_max': 307.16,
+            'pressure': 1011,
+            'humidity': 46
+        },
+        'visibility': 10000,
+        'wind': {
+            'speed': 2.57,
+            'deg': 0
+        },
+        'clouds': {
+            'all': 40
+        },
+        'dt': 1629094681,
+        'sys': {
+            'type': 1,
+            'id': 9314,
+            'country': 'VN',
+            'sunrise': 1629067419,
+            'sunset': 1629112317
+        },
+        'timezone': 25200,
+        'id': 1566083,
+        'name': 'Ho Chi Minh City',
         'cod': 200
     }
 }
