@@ -10,7 +10,7 @@ describe('User action', () => {
     test('should display the weather detail when load page', async () => {
         axios.get = jest.fn().mockResolvedValueOnce(singaporeWeather)
         const { getByText } = render(<App />)
-        
+
         // wait for data loaded
         await waitFor(() => {
             expect(getByText(/Rain/, { selector: '.highlight-text' })).toBeInTheDocument()
@@ -37,11 +37,5 @@ describe('User action', () => {
         expect(getByText(/46/, { selector: '.highlight-humidity' })).toBeInTheDocument()
         expect(getByText(/31/, { selector: '.bg-number' })).toBeInTheDocument()
         expect(getByText(/3/, { selector: '.normal-number' })).toBeInTheDocument()
-    })
-
-    test('should render error if there is a error', async () => {
-        const errorMessage = 'Internal Server Error'
-        axios.get = jest.fn().mockRejectedValue(new Error(errorMessage))
-        await expect(axios.get()).rejects.toThrow(errorMessage)
     })
 })
