@@ -22,6 +22,7 @@ const App = () => {
         console.log(response.data);
       })
   }, [location])
+  console.log(weatherData);
 
   return (
     <div className='layout__container'>
