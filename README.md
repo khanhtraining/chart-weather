@@ -5,4 +5,4 @@
 npm start
 
 ### Other option
-Run Test: npm test# chart-weather
+Run Test: npm test
